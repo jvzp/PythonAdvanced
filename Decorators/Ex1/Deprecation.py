@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 def deprecation_warning(func):
+    """Decorator for deprecation warning"""
     def deprecated():
         print("This function will not be used departing from 2020...")
         return func()
@@ -14,5 +15,4 @@ def main():
     foo()
 
 if __name__ == "__main__":
-    # execute only if run as a script
     main()
